@@ -1,0 +1,32 @@
+create TABLE TEAM (
+Name varchar(20) PRIMARY KEY,
+no_of_times_champions int(5));
+
+INSERT into team(Name,no_of_times_champions) values('Chennai Super Kings',3);
+
+INSERT into team(Name,no_of_times_champions) values('Royal Challengers Banglore',0);
+
+INSERT into team(Name,no_of_times_champions) values('Delhi Capitals',0);
+
+INSERT into team(Name,no_of_times_champions) values('Kolkata Knight Riders',2);
+
+INSERT into team(Name,no_of_times_champions) values('Kings XI Punjab',0);
+
+INSERT into team(Name,no_of_times_champions) values('Mumbai Indians',4);
+
+INSERT into team(Name,no_of_times_champions) values('Rajasthan Royals',1);
+
+INSERT into team(Name,no_of_times_champions) values('Sunrisers Hyderabad',1);
+
+
+
+
+CREATE TABLE Batsmen( Player_name varchar(30), 
+Team_name varchar(20),
+ Nationality varchar(20),
+ total_matches int(10),
+ runs int(5),
+ jersey_number int(5),
+ strike_rate int(5),
+ fifties int(3),
+ FOREIGN KEY (team_name) REFERENCES team(Name) );

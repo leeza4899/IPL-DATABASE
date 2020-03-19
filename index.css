@@ -1,0 +1,244 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Zilla Slab', serif;
+}
+.nav-back{
+  background-color: transparent!important;
+}
+body{
+  position: relative;
+  top:10px;
+  background-image: url(background/samarth-shirke-ghxL3qOfkPo-unsplash.jpg);
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+  width:auto;
+
+}
+.logo{
+  font-family: 'Zilla Slab', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1b262c!important;
+}
+/*                     player cards                       */
+
+
+.container{
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.player-cards{
+
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  border-radius: 25px;
+  background: #000;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+
+
+
+}
+
+div img {
+  position: relative;
+  top: 40px;
+  width: 300px;
+  height: auto!important;
+  border-radius: 25px;
+}
+
+.player-cards .player-img  {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position:relative;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;}
+
+  .player-cards:hover .player-img{
+    transform: rotateY(-135deg);
+
+  }
+  .delhi-container .player-img{
+    background-color: #0c7b93;
+  }
+  .kkr-container .player-img{
+    background-color: #21243d;
+  }
+
+.royal-container .player-img{
+  background-color: #ce0f3d;
+}
+.rr-container .player-img{
+  background-color: #e9b2bc;
+}
+.srh-container .player-img{
+  background-color: #ffe196;
+}
+  .chennai-container .player-img{
+    background-color: #f8dc88;
+  }
+    .punjab-container .player-img{
+      background-color: #d63447;
+    }
+      .mi-container .player-img{
+        background-color: #0fabbc;
+      }
+.chennai-container .player-cards{
+  box-shadow: inset 300px 0 50px #ffd800;
+}
+.delhi-container .player-cards{
+  box-shadow: inset 300px 0 50px #29a19c;
+}
+.punjab-container .player-cards{
+  box-shadow: inset 300px 0 50px #b22222;
+}
+.mi-container .player-cards{
+  box-shadow: inset 300px 0 50px #3e64ff;
+}
+.srh-container .player-cards{
+  box-shadow: inset 300px 0 50px #ec9b3b;
+}
+.rr-container .player-cards{
+  box-shadow: inset 300px 0 50px #5d1451;
+}
+.royal-container .player-cards{
+  box-shadow: inset 300px 0 50px #ef4b4b;
+}
+.kkr-container .player-cards{
+  box-shadow: inset 300px 0 50px #380e7f;
+}
+/* .chennai-container .player-cards .player-details{
+  color: #7d5e2a
+}
+  .delhi-container .player-cards .player-details{
+    color: #7d5e2a
+  }
+    .punjab-container .player-cards .player-details{
+      color: #7d5e2a
+    }
+      .mi-container .player-cards .player-details{
+        color: #7d5e2a
+      }
+        .srh-container .player-cards .player-details{
+          color: #7d5e2a
+        }
+          .rr-container .player-cards .player-details{
+            color: #7d5e2a
+          }
+            .royal-container .player-cards .player-details{
+              color: #7d5e2a
+            }
+              .kkr-container .player-cards .player-details{
+                color: #7d5e2a
+              } */
+
+
+.player-cards .player-img .img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  width: 100%
+  height:100%
+  object-fit:cover;
+}
+.player-cards .player-details{
+  position:  absolute;
+  top: 0;
+  left: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: "Dosis";
+  font-size: 25px;
+  ;
+}
+
+/******************** cards********************************/
+.cards-css{
+  background-color: transparent!important;
+}
+.cards1{
+  align-items: center;
+  padding-top: 20vh!important;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 25px 25px 0 0;
+}
+.swiper-slide {
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+}
+.details-team h3{
+  text-align: center;
+  font-family: Cuprum;
+  color: #000;
+}
+.details-team{
+  background-color: #fff;
+  border-radius: 0 0 25px 25px;
+}
+.swiper-pagination{
+  position: relative;
+  top: 40px;
+}
+.swiper-pagination-bullet{
+  background-color: #fff;
+}
+.imgbox{
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
+}
+.imgbox1{  background-image: url(background/csk-logo.jpg);
+  }
+.imgbox2{
+  background-image: url(background/delhi.webp);
+  }
+.imgbox3{  background-image: url(background/kkr.jpg);}
+.imgbox4{
+  background-image: url(background/mumbai-ind.jpg);
+  }
+.imgbox5{
+  background-image: url(background/punjab.jpg);
+  }
+.imgbox6{
+  background-image: url(background/Rajasthan-Royals.jpg);
+}
+.imgbox7{
+  background-image: url(background/rcb.jpg);
+}
+.imgbox8{
+  background-image: url(background/sun-risers.jpg);
+}
+.smallfont h3{
+  font-size: 20px!important;
